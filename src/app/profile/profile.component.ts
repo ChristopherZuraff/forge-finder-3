@@ -10,6 +10,21 @@ import { Router } from "@angular/router";
 })
 export class ProfileComponent implements OnInit {
   currentDwarf: Dwarf = new Dwarf();
+  favoriteDrinks: string[] = ["Beer", "Mai-Tai", "Dragons Blood", "Rob Roy"];
+
+  occupations: string[] = [
+    "Smith",
+    "Forger",
+    "Farmer",
+    "Bladesmith",
+    "Gemsmith",
+    "Miner",
+    "Warrior",
+    "Mercenary",
+    "Bootlegger",
+    "Breeder",
+    "Mouth Breather"
+  ];
 
   submitDwarf() {
     if (
@@ -18,7 +33,7 @@ export class ProfileComponent implements OnInit {
       this.currentDwarf.beardColor &&
       this.currentDwarf.beardLength
     ) {
-      this.dwarfService.addDwarf(this.currentDwarf);
+      this.dwarfService.addDwarf(this.currentDwarf).subscribe();
       this.router.navigate(["/spark"]);
     }
   }

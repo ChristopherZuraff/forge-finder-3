@@ -1,10 +1,14 @@
-<div class= "card" *ngFor= "let dwarf of dwarves" >
-  <div class= "card-body">
-    <h5 class= "card-body">{{dwarf.name}}</h5>
-    <p class= "card-text">
-      Height: {{dwarf.height}} 
-      <br/>BeardColor: {{dwarf.beardColor}} 
-      <br/>BeardLength:{{dwarf.beardLength}} 
+<div class="card" *ngFor="let dwarf of dwarves">
+  <div class="card-body">
+    <h5 class="card-body">{{dwarf.name}} the {{dwarf.occupation}}</h5>
+    <button class="btn btn-danger" (click)="deleteDwarf(dwarf._id)">delete</button>
+    <p class="card-text">
+      {{dwarf._id}}
+      <br/> Height: {{dwarf.height}}
+      <br/>BeardColor:
+      <span [style.color]="dwarfbeardColor"> {{dwarf.beardColor}}</span>
+      <br/>BeardLength:{{dwarf.beardLength}}
+      <br/>FavoriteDrink:{{dwarf.favoriteDrink}}
     </p>
   </div>
 </div>
