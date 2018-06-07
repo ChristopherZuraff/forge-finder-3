@@ -27,6 +27,7 @@ export class ProfileComponent implements OnInit {
   ];
 
   submitDwarf() {
+    // alert("hi");
     if (
       this.currentDwarf.name &&
       this.currentDwarf.height &&
