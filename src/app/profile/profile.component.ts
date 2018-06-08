@@ -35,6 +35,15 @@ export class ProfileComponent implements OnInit {
     "Applers"
   ];
 
+  weapons: string[] = [
+    "Knife",
+    "Axe",
+    "Sword",
+    "War Hammer",
+    "Mace",
+    "Spikey ball of Death"
+  ];
+
   submitDwarf() {
     // alert("hi");
     if (

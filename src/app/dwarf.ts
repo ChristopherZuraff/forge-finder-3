@@ -7,5 +7,6 @@ export class Dwarf {
   favoriteDrink: string;
   occupation: string;
   clan: string;
+  wepon: string;
   _id;
 }

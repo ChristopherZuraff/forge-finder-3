@@ -52,8 +52,16 @@
         <option *ngFor="let clan of clans">{{clan}}</option>
       </select>
     </div>
+  </div>
 
+  <div class="form-group row">
 
+    <label for="dwarfWeapon" class="col-sm 3 col-form-label">Weapon</label>
+    <div class="col-sm-9">
+      <select name="dwarfWeapon" class="form-control" [(ngModel)]="currentDwarf.weapon">
+        <option *ngFor="let weapon of weapons">{{weapon}}</option>
+      </select>
+    </div>
   </div>
   <div class="form-group-row">
     <button type="submit" class="offset-sm-3 btn btn-primary" (click)="submitDwarf()">Set in Stone</button>
