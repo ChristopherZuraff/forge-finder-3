@@ -43,6 +43,16 @@
         <option *ngFor="let occupation of occupations" [value]="occupation.value">{{occupation}}</option>
       </select>
     </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="dwarfClan" class="col-sm 3 col-form-label">Clan</label>
+    <div class="col-sm-9">
+      <select name="dwarfClan" class="form-control" [(ngModel)]="currentDwarf.clan">
+        <option *ngFor="let clan of clans" [value]="clan.value">{{clan}}</option>
+      </select>
+    </div>
+
 
   </div>
   <div class="form-group-row">

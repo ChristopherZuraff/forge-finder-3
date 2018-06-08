@@ -26,6 +26,15 @@ export class ProfileComponent implements OnInit {
     "Mouth Breather"
   ];
 
+  clans: string[] = [
+    "Stone Mashers",
+    "Dragon Fodder",
+    "Mountian Folks",
+    "Sea Seekers",
+    "Microsofters",
+    "Applers"
+  ];
+
   submitDwarf() {
     // alert("hi");
     if (

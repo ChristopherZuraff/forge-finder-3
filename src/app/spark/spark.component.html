@@ -7,8 +7,11 @@
       <br/> Height: {{dwarf.height}}
       <br/>BeardColor:
       <span [style.color]="dwarfbeardColor"> {{dwarf.beardColor}}</span>
+      <app-beard color="{{dwarfbeardColor}}" height="{{dwarf.beardLength *2}}"></app-beard>
       <br/>BeardLength:{{dwarf.beardLength}}
       <br/>FavoriteDrink:{{dwarf.favoriteDrink}}
+      <br/>Occupation: {{dwarf.occupation}}
+      <br/>Clan:{{dwarf.clan}}
     </p>
   </div>
 </div>
